@@ -1,0 +1,16 @@
+name: Introduction
+
+on:
+  - push
+
+jobs:
+  intro:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout karo Code ko
+        uses: actions/checkout@v6.1.0
+
+      - name: Use NodeJS Actions
+        uses: actions/setup-node@v7
+        with:
+          node-version: 16
